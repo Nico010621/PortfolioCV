@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b8dc60971e.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Primary Meta Tags -->
+    <title>Nicolas Barboza</title>
+    <meta name="title" content="Nicolas Barboza">
+    <meta name="description" content="Pagina web portfolio,  para mostrar contenido y skills">
+    <link rel="shortcut icon" href="/imgs/logo-head.png">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://metatags.io/">
+    <meta property="og:title" content="Nicolas Barboza">
+    <meta property="og:description" content="Pagina web portfolio,  para mostrar contenido y skills">
+    <meta property="og:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://metatags.io/">
+    <meta property="twitter:title" content="Nicolas Barboza">
+    <meta property="twitter:description" content="Pagina web portfolio,  para mostrar contenido y skills">
+    <meta property="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="background-photo" id="sectionHome">
+        <header>
+            <nav class="container_navbar">
+                <div class="navbar-logo">
+                    <a href="./index.html" class="nav-logo">
+                        <img class="logo-header" src="./imgs/logo-head.png" alt="logo de presentación">
+                    </a>
+                    <button class="nav-toggle" aria-label="Abrir menú">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-menu-item">
+                        <button class="navbar-container__btn" id="btnHome" onclick="cambiarColorBoton('clickBtnHome')">
+                            <a href="#sectionHome" class="navbar-container_btnContenido">Inicio</a>
+                        </button>
+
+                    </li>
+                    <li class="nav-menu-item">
+                        <button class="navbar-container__btn" id="btnAboutMe"
+                            onclick="cambiarColorBoton('clickBtnAboutMe')">
+                            <a href="#sectionAboutMe" class="navbar-container_btnContenido">Sobre Mi
+                            </a>
+                        </button>
+                    </li>
+                    <li class="nav-menu-item">
+                        <button class="navbar-container__btn" id="btnProject"
+                            onclick="cambiarColorBoton('clickBtnProject')">
+                            <a href="#sectionProjects" class="navbar-container_btnContenido">Proyectos
+                            </a>
+                        </button>
+                    </li>
+                    <li class="nav-menu-item">
+                        <button class="navbar-container__btn" id="btnContact"
+                            onclick="cambiarColorBoton('clickBtnContact')">
+                            <a href="#sectionContact" class="navbar-container_btnContenido">Contacto
+                            </a>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="container-home">
+                <img class="container-home__photo" src="/imgs/fotomia.png" alt="Foto personal del creador de la página">
+                <div class="container-home__text">
+                    <h1>Nicolás Barboza</h1>
+                    <p>Desarrollador Frontend</p>
+                </div>
+            </section>
+        </main>
+    </div>
+    <article class="container-sections container-section__aboutMe" id="sectionAboutMe">
+        <div class="div-tittle__section">
+            <h2 class="section-title">Sobre Mi</h2>
+        </div>
+        <div class="div-aboutMe">
+            <h3>Desarrollador Frontend</h3>
+            <p class="div-aboutMe__paragraph">
+                Estudio para ser desarrollador web frontend. Me gusta
+                la idea y la sensación de construir algo que no
+                solo sea funcional, estético y útil para alguien,
+                sino tambien que me represente un desafío el cual
+                tengo que superar. Veo la importancia del
+                desarrollo web, como la oportunidad de crear
+                soluciones que tengan un impacto positivo
+                en el día a día de una persona o de un grupo.
+            </p>
+        </div>
+        <div class="div-aboutMe">
+            <div class="div-aboutMe__card">
+                <h3>Lenguajes</h3>
+                <div class="div-aboutMe__card--logos">
+                    <img class="div-aboutMe__logos" src="/imgs/logo-html-BW.png" alt="logo de HTML">
+                    <img class="div-aboutMe__logos" src="/imgs/logo-css-BW.png" alt="logo de CSS">
+                    <img class="div-aboutMe__logos" src="/imgs/logo-js-BW.png" alt="logo de JavaScript">
+                    <img class="div-aboutMe__logos" src="/imgs/logo-react-BW.png" alt="logo de React">
+                </div>
+                <h3>Tecnologías</h3>
+                <div class="div-aboutMe__card--logos">
+                    <img class="div-aboutMe__logos" src="/imgs/logo-boostrap-BW.png" alt="logo de Boostrap">
+                    <img class="div-aboutMe__logos" src="/imgs/logo-guthub-BW.png" alt="logo de Github">
+                </div>
+            </div>
+        </div>
+        <div class="div-aboutMe__pdf" id="div-aboutMe__pdf">
+            <button class="div-aboutMe__btnOpen" id="btn-showCv" onclick="showCv('openCv')">
+                Visualizar CV
+            </button>
+            <button class="div-aboutMe__btnClose" id="btn-closeCv" onclick="showCv('closeCv')">
+                Cerrar PDF
+            </button>
+            <embed src="/docs/CV-Nicolas Barboza.pdf" type="application/pdf" class="container-embed" id="pdf-container">
+           
+        </div>
+    </article>
+    <h2 class="section_tittle">Proyectos</h2>
+    <article class="container-sections container-section__proyectos" id="sectionProjects">
+        <div class="div-proyectos">
+            <div class="div-proyectos__cards">
+                <a class="div_proyectos__cards--link" href="https://libreria-loremim.netlify.app/">
+                    <img class="div-proyectos__photo" src="/imgs/logo-libreriaLoremim.png" alt="Previsualización de una página web">
+                </a>
+                <p class="div-proyectos__paragraph"> Librería Loremim. Proyecto de una librería comercial con venta de
+                    artículos
+                </p>
+                <div class="div-proyectos__btn">
+                    <button class="btn-proyectos"><a href="https://github.com/Nico010621/Libreria-Loremim.git">Github</a></button>
+                    <button class="btn-proyectos"><a href="https://libreria-loremim.netlify.app/">Ir al Sitio</a>
+                    </button>
+                </div>
+            </div>
+    </article>
+    <h2 class="section_tittle">Contactame</h2>
+    <article class="container-sections container-section__contacto" id="sectionContact">
+        <div class="div-contacto">
+            <div class="div-contacto__cards">
+                <a href="www.linkedin.com/in/nicolas-barboza-24aab1229">
+                    <img class="div-contacto__logos" src="/imgs/linkedin-logo.png" alt="Ícono de Linkedin">
+                </a>
+                <p class="div-contacto__cards--text">Contactame</p>
+            </div>
+            <div class="div-contacto__cards">
+                <a href="https://github.com/Nico010621">
+                    <img class="div-contacto__logos" src="/imgs/logo-guthub.png" alt="Ícono de Github">
+                </a>
+                <p class="div-contacto__cards--text">Seguime</p>
+            </div>
+            <div class="div-contacto__cards">
+                <a href="mailto:nicobar0106@gmail.com">
+                    <img class="div-contacto__logos" src="/imgs/logo-gmail.png" alt="Ícono de email">
+                </a>
+                <p class="div-contacto__cards--text">Escribime</p>
+            </div>
+        </div>
+    </article>
+    <footer></footer>
+    <script src="logica.js"></script>
+</body>
+
+
+</html>
